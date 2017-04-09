@@ -114,7 +114,7 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 32),
-    'h2': ('font-size': 20),
+    'h2': ('font-size': 28),
     'h3': ('font-size': 19),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),
@@ -499,13 +499,13 @@ $responsive-embed-ratios: (
 // ----------
 
 $reveal-background: $white;
-$reveal-width: 600px;
+$reveal-width: 700px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba($black, 0.6);
 
 // 30. Slider
 // ----------

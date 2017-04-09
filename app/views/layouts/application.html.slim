@@ -15,7 +15,7 @@ html lang="en"
       meta property="og:title" content==(content_for?(:og_title) ? yield(:og_title) : yield(:title))
       meta property="og:type" content="website"
       meta property="og:url" content=(content_for?(:url) ? yield(:url) : request.url)
-      meta property="og:image" content==(content_for?(:image_url) ? yield(:image_url) : "#{request.protocol}#{request.host_with_port}#{image_path("logo_facebook.png")}")
+      meta property="og:image" content==(content_for?(:image_url) ? yield(:image_url) : "#{request.protocol}#{request.host_with_port}#{image_path("logo-facebook.png")}")
       meta property="og:description" content==strip_tags(content_for?(:description) ? yield(:description) : description)
       meta name="author" content=(content_for?(:author) ? yield(:author) : "Daniel Weinmann")
     / Metatags for every page
@@ -38,9 +38,10 @@ html lang="en"
 
       ga('create', '#{ENV['GOOGLE_ANALYTICS_ID']}', 'auto');
   body[data-namespace="#{namespace}" data-controller="#{controller_name}" data-action="#{action_name}" data-locale="#{I18n.locale}"]
+    = render 'layouts/flash'
     .row
       .columns.text-center.margin-top
-        .logo
+        a.logo href="/"
           .image= image_tag 'icon.png'
           .text Native Garden
     .row

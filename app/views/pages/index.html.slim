@@ -4,4 +4,13 @@
   = "We're a small shop that develops high-end apps for clients. Full time, one project at a time."
 h1= content_for(:title)
 p.lead.margin-top= content_for(:description)
-.button.margin-top Want to talk?
+a.button.margin-top data-open="subscribe" Want to talk?
+.reveal.text-center.padding#subscribe(data-reveal)
+  h2 Want to create a high-end app?
+  p.lead.margin-top Enter your e-mail andress bellow and we'll contact you.
+  = form_for Lead.new do |form|
+    = form.email_field :email, class: "columns", placeholder: "your@email.com"
+    = form.submit "Please contact me", class: "button small-margin-top"
+  p.small-margin-top We hate SPAM and promise to keep your email address safe
+  button.close-button(data-close aria-label="Close" type="button")
+    span aria-hidden="true" &times;

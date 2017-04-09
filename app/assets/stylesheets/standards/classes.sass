@@ -1,7 +1,13 @@
+.padding
+  padding: 2rem
 .margin-top
   margin-top: 2rem
   @include breakpoint(medium up)
     margin-top: 3rem
+.small-margin-top
+  margin-top: 1rem
+  @include breakpoint(medium up)
+    margin-top: 2rem
 .readable
   margin-left: auto
   margin-right: auto
@@ -24,15 +30,15 @@
     @include breakpoint(large up)
       margin-right: 2rem
       img
-        margin-top: -3.5rem
-        width: 140px
+        margin-top: -3rem
+        width: 110px
   .text
     display: inline-block
     font-size: 2.4rem
     @include breakpoint(medium up)
       font-size: 4rem
     @include breakpoint(large up)
-      font-size: 6rem
+      font-size: 5rem
 .button
   text-transform: uppercase
   font-weight: 700
