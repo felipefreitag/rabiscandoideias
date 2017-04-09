@@ -1,0 +1,47 @@
+.margin-top
+  margin-top: 2rem
+  @include breakpoint(medium up)
+    margin-top: 3rem
+.readable
+  margin-left: auto
+  margin-right: auto
+  width: 94%
+  @include breakpoint(medium up)
+    width: 90%
+.logo
+  margin-bottom: 1rem
+  .image
+    display: inline-block
+    margin-right: 1rem
+    img
+      margin-top: -1rem
+      width: 48px
+    @include breakpoint(medium up)
+      margin-right: 2rem
+      img
+        margin-top: -2.2rem
+        width: 100px
+    @include breakpoint(large up)
+      margin-right: 2rem
+      img
+        margin-top: -3.5rem
+        width: 140px
+  .text
+    display: inline-block
+    font-size: 2.4rem
+    @include breakpoint(medium up)
+      font-size: 4rem
+    @include breakpoint(large up)
+      font-size: 6rem
+.button
+  text-transform: uppercase
+  font-weight: 700
+  border-radius: 2rem
+  padding-left: 3rem
+  padding-right: 3rem
+  font-size: 1.3rem
+  @include breakpoint(medium up)
+    border-radius: 3rem
+    padding-left: 4rem
+    padding-right: 4rem
+    font-size: 1.5rem
