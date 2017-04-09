@@ -9,7 +9,7 @@ a.button.margin-top data-open="subscribe" Want to talk?
   h2 Want to create a high-end app?
   p.lead.margin-top Enter your e-mail andress bellow and we'll contact you.
   = form_for Lead.new do |form|
-    = form.email_field :email, class: "columns", placeholder: "your@email.com"
+    = form.email_field :email, class: "columns", placeholder: "your@email.com", autofocus: true
     = form.submit "Please contact me", class: "button small-margin-top"
   p.small-margin-top We hate SPAM and promise to keep your email address safe
   button.close-button(data-close aria-label="Close" type="button")
