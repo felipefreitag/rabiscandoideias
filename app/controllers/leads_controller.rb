@@ -1,6 +1,7 @@
 class LeadsController < ApplicationController
   def create
     @lead = Lead.where(lead_params).first_or_initialize
+    @lead.subscriptions_count += 1
     if @lead.save
       redirect_to page_path('thank_you')
     else
