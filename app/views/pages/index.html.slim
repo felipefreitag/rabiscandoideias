@@ -7,7 +7,7 @@ p.lead.margin-top= content_for(:description)
 a.button.margin-top data-open="subscribe" Want to talk?
 .reveal.text-center.padding#subscribe(data-reveal)
   h2 Want to create a high-end app?
-  p.lead.margin-top Enter your e-mail andress bellow and we'll contact you.
+  p.lead.margin-top Enter your e-mail address bellow and we'll contact you.
   = form_for Lead.new do |form|
     = form.email_field :email, class: "columns", placeholder: "your@email.com", autofocus: true
     = form.submit "Please contact me", class: "button small-margin-top"
