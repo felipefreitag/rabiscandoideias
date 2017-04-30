@@ -1,12 +1,12 @@
 - content_for :title do
-  = "iOS + Android apps with React Native"
+  = "World-class native apps that work both on iOS and Android"
 - content_for :description
-  = "We're a small shop that develops high-end apps for clients."
+  = "We work with companies that are tired of needing two distinct apps, one for iOS and another for Android. We craft world-class native apps that work on both!"
 h1= content_for(:title)
 p.lead.margin-top= content_for(:description)
 a.button.margin-top data-open="subscribe" Want to talk?
 .reveal.text-center.padding#subscribe(data-reveal)
-  h2 Want to create a high-end app?
+  h2 Want to create a world-class app that work both on iOS and Android?
   p.lead.margin-top Enter your e-mail address bellow and we'll contact you.
   = form_for Lead.new do |form|
     = form.email_field :email, class: "columns", placeholder: "your@email.com", autofocus: true
