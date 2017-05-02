@@ -1,5 +1,23 @@
+.bg-white
+  background-color: $white
+.bg-black
+  background-color: $black
+.white
+  color: $white
+.uppercase
+  text-transform: uppercase
+.raleway
+  font-family: 'Raleway', sans-serif
+.bold
+  font-weight: 700
 .padding
   padding: 2rem
+  @include breakpoint(medium up)
+    padding: 3rem
+.padding-bottom
+  padding-bottom: 2rem
+  @include breakpoint(medium up)
+    padding-bottom: 3rem
 .margin-top
   margin-top: 2rem
   @include breakpoint(medium up)
@@ -20,25 +38,25 @@
     display: inline-block
     margin-right: 1rem
     img
-      margin-top: -1rem
-      width: 48px
+      margin-top: -1.12rem
+      width: 36px
     @include breakpoint(medium up)
       margin-right: 2rem
       img
-        margin-top: -2.2rem
-        width: 100px
+        margin-top: -2rem
+        width: 58px
     @include breakpoint(large up)
       margin-right: 2rem
       img
-        margin-top: -3rem
-        width: 110px
+        margin-top: -2.6rem
+        width: 72px
   .text
     display: inline-block
     font-size: 2.4rem
     @include breakpoint(medium up)
-      font-size: 4rem
+      font-size: 3.5rem
     @include breakpoint(large up)
-      font-size: 5rem
+      font-size: 4.5rem
 .button
   white-space: normal
   text-transform: uppercase
@@ -46,7 +64,7 @@
   border-radius: 2rem
   padding-left: 3rem
   padding-right: 3rem
-  font-size: 1.3rem
+  font-size: 1rem
   line-height: 1.6rem
   @include breakpoint(medium up)
     border-radius: 3rem

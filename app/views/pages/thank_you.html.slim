@@ -2,5 +2,7 @@
   = "Thank you!"
 - content_for :description
   = "We'll soon contact you so we can start talking."
-h1= content_for(:title)
-p.lead.margin-top= content_for(:description)
+.row.columns.text-center
+  .readable
+    h1= content_for(:title)
+    p.lead.margin-top= content_for(:description)
