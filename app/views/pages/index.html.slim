@@ -24,7 +24,7 @@
   h3 Want to transition to a world-class app that works both on iOS and Android?
   p.margin-top Enter your e-mail address bellow and we'll contact you
   = form_for Lead.new do |form|
-    = form.email_field :email, class: "columns", placeholder: "your@email.com", autofocus: true
+    = form.email_field :email, class: "columns", placeholder: "your@email.com"
     = form.submit "Please contact me", class: "button small-margin-top"
   p.small-margin-top We hate SPAM and promise to keep your email address safe
   button.close-button(data-close aria-label="Close" type="button")
