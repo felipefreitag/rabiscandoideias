@@ -21,8 +21,8 @@
         = render partial: "pages/item", locals: { title: 'Robustness and long-term thinking' }
       a.button.secondary.margin-top data-open="subscribe" Also value that?
 .reveal.text-center.padding#subscribe(data-reveal)
-  h2 Want to transition to a world-class app that work both on iOS and Android?
-  p.lead.margin-top Enter your e-mail address bellow and we'll contact you.
+  h3 Want to transition to a world-class app that works both on iOS and Android?
+  p.margin-top Enter your e-mail address bellow and we'll contact you
   = form_for Lead.new do |form|
     = form.email_field :email, class: "columns", placeholder: "your@email.com", autofocus: true
     = form.submit "Please contact me", class: "button small-margin-top"
