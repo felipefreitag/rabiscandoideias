@@ -1,4 +1,4 @@
-- description = "The social network for tango dancers"
+- description = "The exact software you need, in time and ready to grow"
 doctype html
 html lang="en"
   head
@@ -11,19 +11,19 @@ html lang="en"
     - else
       / Meta tags for pages that don't have specific meta tags
       meta name="description" content==strip_tags(content_for?(:description) ? yield(:description) : description)
-      meta name="keywords" content="#{yield :title} Native Garden"
+      meta name="keywords" content="#{yield :title} Seasoned"
       meta property="og:title" content==(content_for?(:og_title) ? yield(:og_title) : yield(:title))
       meta property="og:type" content="website"
       meta property="og:url" content=(content_for?(:url) ? yield(:url) : request.url)
       meta property="og:image" content==(content_for?(:image_url) ? yield(:image_url) : "#{request.protocol}#{request.host_with_port}#{image_path("logo-facebook.png")}")
       meta property="og:description" content==strip_tags(content_for?(:description) ? yield(:description) : description)
-      meta name="author" content=(content_for?(:author) ? yield(:author) : "Daniel Weinmann")
+      meta name="author" content=(content_for?(:author) ? yield(:author) : "Seasoned")
     / Metatags for every page
-    meta property="og:site_name" content="Native Garden"
+    meta property="og:site_name" content="Seasoned"
     meta property="fb:app_id" content=ENV["FACEBOOK_APP_ID"]
     meta property="fb:admins" content=ENV["FACEBOOK_ADMINS"]
     meta name="turbolinks-cache-control" content="no-preview"
-    title== "#{"#{strip_tags(yield :title)} · " if content_for?(:title)} Native Garden"
+    title== "#{"#{strip_tags(yield :title)} · " if content_for?(:title)} Seasoned"
     link rel="shortcut icon" href==image_path('icon.png')
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     - if content_for? :external_js
@@ -42,6 +42,5 @@ html lang="en"
     .bg-white.padding
       .row.columns.text-center
         a.logo href="/"
-          .image= image_tag 'icon.png'
-          .text Native Garden
+          .text Seasoned
     = yield
