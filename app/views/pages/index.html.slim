@@ -7,7 +7,7 @@
 .bg-white.padding-bottom
   .row.columns.text-center
     .readable
-      h3.raleway= content_for(:description)
+      h2.raleway= content_for(:description)
       a.button.margin-top data-open="subscribe" Want to talk?
 .bg-black.white.padding
   .row.columns.text-center
@@ -21,7 +21,7 @@
         = render partial: "pages/item", locals: { title: 'Robustness and long-term thinking' }
       a.button.secondary.margin-top data-open="subscribe" Also value that?
 .reveal.text-center.padding#subscribe(data-reveal)
-  h3 Looking for world-class developers to help you with your product or project?
+  h2 Looking for world-class developers to help you with your product or project?
   p.margin-top Enter your e-mail address bellow and we'll contact you
   = form_for Lead.new do |form|
     = form.email_field :email, class: "columns", placeholder: "your@email.com"
